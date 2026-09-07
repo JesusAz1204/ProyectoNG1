@@ -11,7 +11,7 @@ class AuthController extends Controller
     // Muestra el formulario de login (Blade)
     public function showLogin()
     {
-        return view('auth.login');
+        return view('login');
     }
 
     // Procesa las credenciales

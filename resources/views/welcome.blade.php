@@ -26,17 +26,18 @@
             <!-- Botones de Acción -->
             <div class="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
                 <!-- Botón Primario (Acento Vibrante) -->
-                <a href="/catalogo" class="btn-skew bg-[#ccff00] text-black px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+                <a href="{{ url('/catalogo') }}" class="btn-skew bg-[#ccff00] text-black px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(204,255,0,0.4)]">
                     <span class="btn-unskew font-bebas text-2xl tracking-widest uppercase">Ver Colección</span>
                 </a>
                 
                 <!-- Botón Secundario (Borde Minimalista) -->
-                <a href="/exclusivos" class="btn-skew border-2 border-white text-white px-10 py-4 hover:bg-white hover:text-black transition-all duration-300">
+                <a href="{{ url('/exclusivos') }}" class="btn-skew border-2 border-white text-white px-10 py-4 hover:bg-white hover:text-black transition-all duration-300">
                     <span class="btn-unskew font-bebas text-2xl tracking-widest uppercase">Comprar Exclusivos</span>
                 </a>
             </div>
         </div>
     </section>
+    
     <!-- SECCIÓN DE CATÁLOGO (FASE 2) -->
     <section class="max-w-7xl mx-auto px-6 md:px-12 py-24 bg-white">
         <!-- Encabezado de la sección -->
@@ -44,7 +45,7 @@
             <h2 class="font-bebas text-5xl md:text-7xl uppercase text-black leading-none tracking-tight">
                 Nuevos <br> <span class="text-gray-400">Lanzamientos</span>
             </h2>
-            <a href="#" class="hidden md:inline-block font-inter font-bold text-sm uppercase tracking-widest hover:text-[#ccff00] transition-colors">
+            <a href="{{ url('/catalogo') }}" class="hidden md:inline-block font-inter font-bold text-sm uppercase tracking-widest hover:text-[#ccff00] transition-colors">
                 Ver todo ->
             </a>
         </div>
@@ -63,9 +64,9 @@
                     </span>
                     <!-- Botón Flotante Hover -->
                     <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-20">
-                        <button class="w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
+                        <a href="{{ url('/carrito') }}" class="block text-center w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
                             Agregar al Carrito
-                        </button>
+                        </a>
                     </div>
                     <!-- Gradiente oscuro inferior para legibilidad del botón -->
                     <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -88,9 +89,9 @@
                         NUEVO
                     </span>
                     <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-20">
-                        <button class="w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
+                        <a href="{{ url('/carrito') }}" class="block text-center w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
                             Agregar al Carrito
-                        </button>
+                        </a>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -108,9 +109,9 @@
                 <div class="relative aspect-[4/5] bg-gray-200 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=800&auto=format&fit=crop" alt="Balón" class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
                     <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-20">
-                        <button class="w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
+                        <a href="{{ url('/carrito') }}" class="block text-center w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
                             Agregar al Carrito
-                        </button>
+                        </a>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -131,9 +132,9 @@
                         PROMO -20%
                     </span>
                     <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-20">
-                        <button class="w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
+                        <a href="{{ url('/carrito') }}" class="block text-center w-full bg-[#ccff00] text-black font-bebas text-2xl py-3 hover:bg-black hover:text-white transition-colors">
                             Agregar al Carrito
-                        </button>
+                        </a>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>

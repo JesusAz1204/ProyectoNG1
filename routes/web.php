@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MiActividadController;
 
-// Rutas públicas
+// Rutas públicas de Autenticación
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -39,6 +39,5 @@ Route::get('/exclusivos', function () { return view('exclusivos'); });
 Route::get('/promociones', function () { return view('promociones'); });
 Route::get('/contacto', function () { return view('contacto'); });
 
-// Rutas de los iconos
-Route::get('/login', function () { return view('login'); });
+// Rutas de los iconos (Carrito)
 Route::get('/carrito', function () { return view('carrito'); });
