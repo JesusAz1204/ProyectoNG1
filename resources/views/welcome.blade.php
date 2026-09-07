@@ -26,12 +26,12 @@
             <!-- Botones de Acción -->
             <div class="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
                 <!-- Botón Primario (Acento Vibrante) -->
-                <a href="#" class="btn-skew bg-[#ccff00] text-black px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+                <a href="/catalogo" class="btn-skew bg-[#ccff00] text-black px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(204,255,0,0.4)]">
                     <span class="btn-unskew font-bebas text-2xl tracking-widest uppercase">Ver Colección</span>
                 </a>
                 
                 <!-- Botón Secundario (Borde Minimalista) -->
-                <a href="#" class="btn-skew border-2 border-white text-white px-10 py-4 hover:bg-white hover:text-black transition-all duration-300">
+                <a href="/exclusivos" class="btn-skew border-2 border-white text-white px-10 py-4 hover:bg-white hover:text-black transition-all duration-300">
                     <span class="btn-unskew font-bebas text-2xl tracking-widest uppercase">Comprar Exclusivos</span>
                 </a>
             </div>
