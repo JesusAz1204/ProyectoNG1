@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .btn-skew { transform: skewX(-10deg); }
+  .btn-unskew { transform: skewX(10deg); display: inline-block; }
+}
